@@ -1,0 +1,55 @@
+#pragma once
+
+//-------------------------------------------------------------------------
+//
+// The MIT License (MIT)
+//
+// Copyright (c) 2022 Andrew Duncan
+//
+// Permission is hereby granted, free of charge, to any person obtaining a
+// copy of this software and associated documentation files (the
+// "Software"), to deal in the Software without restriction, including
+// without limitation the rights to use, copy, modify, merge, publish,
+// distribute, sublicense, and/or sell copies of the Software, and to
+// permit persons to whom the Software is furnished to do so, subject to
+// the following conditions:
+//
+// The above copyright notice and this permission notice shall be included
+// in all copies or substantial portions of the Software.
+//
+// THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS
+// OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+// MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+// IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+// CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+// TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+// SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+//
+//-------------------------------------------------------------------------
+
+#include "picosystem.hpp"
+
+//-------------------------------------------------------------------------
+
+static constexpr int tileWidth = 15;
+static constexpr int tileHeight = 15;
+static constexpr int tileCount = 15;
+static constexpr int tileLength = tileWidth * tileHeight;
+
+static constexpr int batteryWidth = 14;
+static constexpr int batteryHeight = 8;
+static constexpr int batteryLength = batteryWidth * batteryHeight;
+
+//-------------------------------------------------------------------------
+
+extern picosystem::color_t emptyImage[tileLength];
+extern picosystem::color_t passageImage[tileLength];
+extern picosystem::color_t boxImage[tileLength];
+extern picosystem::color_t playerImage[2 * tileLength];
+extern picosystem::color_t wallImage[tileLength];
+extern picosystem::color_t passageWithTargetImage[tileLength];
+extern picosystem::color_t boxOnTargetImage[tileLength];
+extern picosystem::color_t playerOnTargetImage[2 * tileLength];
+
+extern picosystem::color_t batteryImage[batteryLength];
+
