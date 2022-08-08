@@ -4,7 +4,7 @@ A version of Boxworld or Sokoban for the [Pimoroni Picosystem](https://shop.pimo
 
 This version of Boxworld has the same 100 levels that are found in the Windows 3.1 version of Boxworld from 1992.
 
-The aim of the game is to place all of the yellow boxes on the spaces with the yellow dots. Place boxes by pushing them using the purple robot. The boxes change colour to red when they are placed on the yellow dots. You can only push the boxes, they can't be pulled. The level is complete when all boxes are in place.
+The aim of the game is to place all of the yellow boxes on the spaces with the light blue dots. Place boxes by pushing them using the robot. The boxes change colour to blue when they are placed on the light blue dots. You can only push the boxes, they can't be pulled. The level is complete when all boxes are in place.
 
 ## Controls:-
 - Move the robot via the D-pad.

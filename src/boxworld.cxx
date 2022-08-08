@@ -165,7 +165,7 @@ Boxworld::update(uint32_t tick)
 void
 Boxworld::draw(uint32_t tick)
 {
-    ps::pen(0, 0, 0);
+    ps::pen(1, 3, 5);
     ps::clear();
 
     drawBoard(tick);

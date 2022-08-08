@@ -141,6 +141,7 @@ def drawString(image, x, y, string, rgb):
 def drawBattery(image, x, y, level):
     levelColour = (0x00, 0x00, 0xFF)
     batteryColour = (0xFF, 0xFF, 0xFF)
+    blackColour = (0x00, 0x00, 0x00)
 
     for i in range(0, 12):
         image.putpixel((x + i, y + 0), batteryColour)
@@ -158,11 +159,15 @@ def drawBattery(image, x, y, level):
         for j in range(0, 6):
             image.putpixel((x + i + 1, y + j + 1), levelColour)
 
+    for i in range(level, 10):
+        for j in range(0, 6):
+            image.putpixel((x + i + 1, y + j + 1), blackColour)
 # --------------------------------------------------------------------------------------------------------
 
 def drawBoxworld(frame):
 
     image = Image.new("RGB", size=(240, 240))
+    image.paste((0x18, 0x38, 0x54), (0, 0, 240, 240))
 
     # ----------------------------------------------------------------------------------------------------
 

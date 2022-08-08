@@ -42,11 +42,8 @@ picosystem_executable(
 
 # --- End Of Boilerplate ---
 
-include_directories(${PROJECT_SOURCE_DIR}/dialogbox)
-
 # Set your build options here
-#pixel_double(${PROJECT_NAME})          # 120x120 resolution game, pixel-doubled to 240x240
-disable_startup_logo(${PROJECT_NAME})  # Skip the PicoSystem splash
+disable_startup_logo(${PROJECT_NAME}) # Skip the PicoSystem splash
 no_font(${PROJECT_NAME})              # Omit the default font
 no_spritesheet(${PROJECT_NAME})       # Omit the default spritesheet
 no_overclock(${PROJECT_NAME})         # Don't overclock
