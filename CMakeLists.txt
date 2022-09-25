@@ -15,7 +15,7 @@ set(PROJECT_SOURCES
 
 # --- Here Be Boilerplate ---
 
-if(NOT PICO_SDK_PATH)
+if (NOT DEFINED ENV{PICO_SDK_PATH} AND (NOT PICO_SDK_PATH))
     message(WARNING "PICO_SDK_PATH not specified. Forcing fetch from git!")
     set(PICO_SDK_FETCH_FROM_GIT true)
 endif()
